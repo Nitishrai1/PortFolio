@@ -17,7 +17,7 @@ const aboutroute=require('./routes/about');
 
 
 app.use('/',indexroute);
-app.use('/',aboutroute);
+app.use('/about',aboutroute);
 
 
 // creating the server
