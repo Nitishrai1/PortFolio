@@ -85,7 +85,7 @@ a{
 }
 .grid{
     display: grid;
-    grid-gap: 1.5rem;
+    gap: 3.5rem;
 
 }
 
@@ -93,7 +93,7 @@ a{
 /* ===============header & navbar */
 .header{
     position: fixed;
-    
+    background-color: var(--body-color);
     top: 0;
     left: 0;
     width: 100%;
@@ -134,7 +134,24 @@ a{
 }
 
 /* Main section */
-.home_container{
-    grid-template-columns: repeat(2,1fr);
+.home{
+    background-color: var(--container-color);
+    padding-block:9rem 3rem ;
+
+}
+.home__container{
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+}
+.home__small{
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-600);
+    letter-spacing: 1px;
+}
+.home__title{
+    font-size: var(--big-font-size);
+    line-height: 1.4;
+}
+.home__description, .home__btns{
+    font-size: var(--large-font-size);
 }
