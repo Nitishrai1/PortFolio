@@ -102,6 +102,8 @@ a{
 
 }
 
+/* navbar style */
+
 .nav,
 .nav__list{
     display: flex;
@@ -151,7 +153,7 @@ a{
 .home__title{
     font-size: var(--big-font-size);
     line-height: 1.4;
-}
+}   
 .home__description, .home__btns{
     font-size: var(--large-font-size);
 }
