@@ -136,6 +136,54 @@ a{
 }
 
 /* Main section */
+
+/* dynamic text */
+.dynamic-txt-container{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li{
+    list-style: none;
+    color: var(--first-color-dark);
+    font-size: var(--body-font);
+    font-weight: var(--big-font-size);
+    position: relative;
+    top: 0;;
+    animation: slide 6s steps(20) infinite;
+    
+
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--container-color);
+    border-left: 2px solid var(--white);
+    animation: typing 1.5s steps(20) infinite;
+    
+
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+
+}
 .home{
     background-color: var(--container-color);
     padding-block:9rem 3rem ;
@@ -146,7 +194,7 @@ a{
     align-items: center;
 }
 .home__small{
-    font-size: var(--large-font-size); 
+    font-size: var(--large-font-size);
     font-weight: var(--weight-600);
     letter-spacing: 1px;
 }
@@ -154,6 +202,9 @@ a{
     font-size: var(--big-font-size);
     line-height: 1.4;
 }   
+.home__description, .home__btns{
+    font-size: var(--large-font-size);
+}
 .home__description{
     margin-block: 1.5rem 3rem;
 }
@@ -161,4 +212,52 @@ a{
     display: flex;
     column-gap: 1rem;
 
+}
+/* ========button============== */
+.btn{
+    display: inline-block;
+    background-color: var(--first-color);
+    border: 1px solid var(--first-color);
+    color: var(--white);
+    padding: 0.9rem 2.5rem;
+    font-size: var(--large-font-size);
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+}
+.btn--transparent{
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+/* ===========bnt hover========== */
+.btn:hover{
+    background-color: var(--first-color-dark);
+
+}
+.btn--transparent:hover{
+    background-color: var(--first-color);
+    color: var(--white);
+
+}
+.home__img-wrapper{
+    margin-inline: auto 2rem;
+    position: relative;
+
+}
+.home__img-wrapper::before,
+.home__img-wrapper::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+.home__img-wrapper::before{
+    background-color: var(--first-color-light);
+}
+.home__img-wrapper::after{
+    background-color: var(--first-color);
+}
+.home__img{
+    z-index: 10;
+    position: relative;
+    vertical-align: middle;
 }
