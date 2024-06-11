@@ -146,7 +146,7 @@ a{
     align-items: center;
 }
 .home__small{
-    font-size: var(--large-font-size);
+    font-size: var(--large-font-size); 
     font-weight: var(--weight-600);
     letter-spacing: 1px;
 }
@@ -154,6 +154,11 @@ a{
     font-size: var(--big-font-size);
     line-height: 1.4;
 }   
-.home__description, .home__btns{
-    font-size: var(--large-font-size);
+.home__description{
+    margin-block: 1.5rem 3rem;
+}
+.home__btn{
+    display: flex;
+    column-gap: 1rem;
+
 }
