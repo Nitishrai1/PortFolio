@@ -244,7 +244,7 @@ a{
     position: relative;
 
 }
-.home__img-wrapper::before,
+.home__img-wrapper::before, 
 .home__img-wrapper::after{
     content: '';
     position: absolute;
@@ -252,12 +252,31 @@ a{
 }
 .home__img-wrapper::before{
     background-color: var(--first-color-light);
+    animation: animate__before 8s ease-in-out infinite;
 }
-.home__img-wrapper::after{
-    background-color: var(--first-color);
+
+.home__img-wrapper::after,
+.home__img{
+    animation: animate__after 8s ease-in-out infinite;
+
 }
+
 .home__img{
     z-index: 10;
     position: relative;
     vertical-align: middle;
+}
+
+/* Home animation */
+@keyframes animate__before{
+    0%{
+        border-radius:60% 39% 25% 76% / 59% 38% 63% 41% ;
+    }
+    50%{
+        border-radius:20% 81% 54% 47% / 24% 53% 47% 73% ; 
+    }
+    0%{
+        border-radius:60% 39% 25% 76% / 59% 38% 63% 41% ;
+    }
+
 }
