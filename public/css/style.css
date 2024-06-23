@@ -85,8 +85,11 @@ a{
 }
 .grid{
     display: grid;
-    gap: 3.5rem;
+    gap: 1.5rem;
 
+}
+.section{
+    padding-block: 6rem;
 }
 
 
@@ -138,52 +141,10 @@ a{
 /* Main section */
 
 /* dynamic text */
-.dynamic-txt-container{
-    margin-left: 15px;
-    height: 90px;
-    line-height: 90px;
-    overflow: hidden;
-}
 
-.dynamic-txts li{
-    list-style: none;
-    color: var(--first-color-dark);
-    font-size: var(--body-font);
-    font-weight: var(--big-font-size);
-    position: relative;
-    top: 0;;
-    animation: slide 6s steps(20) infinite;
-    
 
-}
-@keyframes slide{
-    100%{
-        top: -360px;
-    }
 
-}
-.dynamic-txts li span{
-    position: relative;
-}
-.dynamic-txts li span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--container-color);
-    border-left: 2px solid var(--white);
-    animation: typing 1.5s steps(20) infinite;
-    
 
-}
-@keyframes typing{
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-
-}
 .home{
     background-color: var(--container-color);
     padding-block:9rem 3rem ;
@@ -268,7 +229,7 @@ a{
 }
 
 /* Home animation */
-@keyframes animate__before{
+/* @keyframes animate__before{
     0%{
         border-radius:60% 39% 25% 76% / 59% 38% 63% 41% ;
     }
@@ -279,4 +240,37 @@ a{
         border-radius:60% 39% 25% 76% / 59% 38% 63% 41% ;
     }
 
+} */
+
+/* About section */
+.about__container{
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+}
+.about__img-wrapper{
+    position: relative;
+    height: 400px;
+}
+.about__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+.about__img:nth-child(1){
+    clip-path: polygon(0 0, 0 32%, 28% 0);
+    transform: translateY(-1.25rem);
+}
+.about__img:nth-child(2){
+    clip-path: polygon(28% 0, 84% 0, 24% 100%, 0 100%, 0 33%);
+    transform: translateY(-0.75rem);
+}
+.about__img:nth-child(3){
+    clip-path: polygon(100% 0, 100% 69%, 78% 100%, 20% 100%, 91% 0);
+    transform: translateY(-0.25rem);
+}
+.about__img:nth-child(4){
+    clip-path: polygon(100% 70%, 77% 100%, 100% 100%);
+    transform: translateY(0.25rem);
 }
