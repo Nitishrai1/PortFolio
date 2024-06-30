@@ -1,107 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header>
-        <%- include('../partials/header') %>
-    </header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header><%- include('../partials/header') %></header>
 
     <main class="main">
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <div class="home__content">
-                    <span class="home__small">Hello</span>
-                    <h1 class="home__title"><span>I'm </span> Nitish<br> <span>
-                        <div class="dynamic-txt-container">
-                           <h3>I'm<span class="auto-type"></span></h3>
-                        </div>
-                        </span>
-                    </h1>
-                    <p class="home__description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, praesentium exercitationem dolorum necessitatibus, libero eius aperiam quasi provident sapiente veritatis voluptatem expedita repellat itaque sit.
-                    </p>
-                    <div class="home__btns">
-                        <a href="#contact" class="btn">Hire Me</a>
-                        <a href="#portfolio" class="btn btn--transparent">Portfolio</a>
-                    </div>
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__small">Hello</span>
+            <h1 class="home__title">
+              <span>I'm </span> Nitish<br />
+              <span>
+                <div class="dynamic-txt-container">
+                  <h3>I'm<span class="auto-type"></span></h3>
                 </div>
-                <div class="home__img-wrapper">
-                    <img src="/images/myphoto-removebg-preview.jpg" alt="Nitish" class="home__img">
-                </div>
+              </span>
+            </h1>
+            <p class="home__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              praesentium exercitationem dolorum necessitatibus, libero eius
+              aperiam quasi provident sapiente veritatis voluptatem expedita
+              repellat itaque sit.
+            </p>
+            <div class="home__btns">
+              <a href="#contact" class="btn">Hire Me</a>
+              <a href="#portfolio" class="btn btn--transparent">Portfolio</a>
             </div>
-        </section>
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <div class="about__img-wrapper">
-                    <img src="/images/myphoto.jpeg" class="about__img" alt="Not-visible">
-                    <img src="/images/myphoto.jpeg" class="about__img" alt="Not-visible">
-                </div>
-                <div class="about__container">
-                    <h3 class="section__title" data-title="Who am i?">I'm Nitish rai , a visual Full stack developer</h3>
-                    <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laudantium assumenda, quaerat ducimus numquam sapiente, ut maxime veritatis enim earum delectus qui explicabo nam quis quam esse nisi temporibus fugiat.</p>
-                    <ul class="about__data grid">
-                        <li class="data__item">
-                            <h3 class="data__title">Name:</h3>
-                            <span class="data__description">Nitish Rai</span>
-                        </li>
-                        <li class="data__item">
-                            <h3 class="data__title">Age:</h3>
-                            <span class="data__description">23 years</span>
-                        </li>
-                        <li class="data__item">
-                            <h3 class="data__title">From:</h3>
-                            <span class="data__description">Gorakhpur</span>
-                        </li>
-                        <li class="data__item">
-                            <h3 class="data__title">Email:</h3>
-                            <span class="data__description">nitishraigkp007@gmail.com</span>
-                        </li>
-                       
-                        
-                    </ul>
-                    <div class="about__bottom">
-                        <a href="" class="btn">Dounload Cv</a>
-                        <div class="about__social-links">
-                            <a href="" class="about__social-links">
-                                <i class="fa-brands fa-square-instagram"></i>
-                            </a>
-                            <a href="" class="about__social-links">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="" class="about__social-links">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a href="" class="about__social-links">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="home__img-wrapper">
+            <img
+              src="/images/myphoto-removebg-preview.jpg"
+              alt="Nitish"
+              class="home__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__img-wrapper">
+            <img
+              src="/images/myphoto.jpeg"
+              class="about__img"
+              alt="Not-visible"
+            />
+            <img
+              src="/images/myphoto.jpeg"
+              class="about__img"
+              alt="Not-visible"
+            />
+            <img
+              src="/images/myphoto.jpeg"
+              class="about__img"
+              alt="Not-visible"
+            />
+            <img
+              src="/images/myphoto.jpeg"
+              class="about__img"
+              alt="Not-visible"
+            />
+          </div>
+          <div class="about__container">
+            <h3 class="section__title" data-title="Who am i?">
+              I'm Nitish rai , a visual Full stack developer
+            </h3>
+            <p class="about__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, laudantium assumenda, quaerat ducimus numquam sapiente,
+              ut maxime veritatis enim earum delectus qui explicabo nam quis
+              quam esse nisi temporibus fugiat.
+            </p>
+            <ul class="about__data grid">
+              <li class="data__item">
+                <h3 class="data__title">Name:</h3>
+                <span class="data__description">Nitish Rai</span>
+              </li>
+              <li class="data__item">
+                <h3 class="data__title">Age:</h3>
+                <span class="data__description">23 years</span>
+              </li>
+              <li class="data__item">
+                <h3 class="data__title">From:</h3>
+                <span class="data__description">Gorakhpur</span>
+              </li>
+              <li class="data__item">
+                <h3 class="data__title">Email:</h3>
+                <span class="data__description">nitishraigkp007@gmail.com</span>
+              </li>
+            </ul>
+            <div class="about__bottom">
+              <a href="" class="btn">Dounload Cv</a>
+              <div class="about__social-links">
+                <a href="" class="about__social-links">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="" class="about__social-links">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="about__social-links">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="" class="about__social-links">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
             </div>
-        </section>
-        <!-- ====================Qualification====================== -->
-        <section class="qualification" id="qualification"></section>
-        <!-- ====================Service============================ -->
-        <section class="services" id="services"></section>
-        <!-- =====================services======================= -->
-        <section class="skills" id="skills"></section>
+          </div>
+        </div>
+      </section>
+      <!-- ====================Qualification====================== -->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title title_center" data-title="My Journey">
+          Qualification
+        </h2>
+        <div class="resume__container container grid">
+          <div class="resume__group">
+            <h3 class="resume__heading">Education</h3>
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">coderHouse</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__data-title">Backend Programing</h3>
+                    <span class="resume__date">2014-2024</span>
+                  </div>
+                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">coderHouse</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__data-title">Fronted Programing</h3>
+                    <span class="resume__date">2014-2024</span>
+                  </div>
+                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">coderHouse</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__data-title">DSA Programing</h3>
+                    <span class="resume__date">2014-2024</span>
+                  </div>
+                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume__group">
+            <h3 class="resume__heading">Experiance</h3>
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">coderHouse</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__data-title">Backend Programing</h3>
+                    <span class="resume__date">2014-2024</span>
+                  </div>
+                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">coderHouse</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__data-title">Fronted Programing</h3>
+                    <span class="resume__date">2014-2024</span>
+                  </div>
+                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                  </p>
+                </div>
+              </div>
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">coderHouse</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__data-title">DSA Programing</h3>
+                    <span class="resume__date">2014-2024</span>
+                  </div>
+                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====================Service============================ -->
+      <section class="services" id="services"></section>
+      <!-- =====================services======================= -->
+      <section class="skills" id="skills"></section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed=new Typed(".auto-type",{
-            strings:[" Full Stack Developer"," Developer"," Gamemr"],
+      var typed = new Typed(".auto-type", {
+        strings: [" Full Stack Developer", " Developer", " Gamemr"],
 
-            typeSpeed:150,
-            backSpeed:150,
-            loop:true
-        })
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
     </script>
-</body>
+  </body>
 </html>
