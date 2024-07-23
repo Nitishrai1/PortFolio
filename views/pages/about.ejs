@@ -1,429 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <header><%- include('../partials/header') %></header>
-
-    <main class="main">
-      <section class="home" id="home">
-        <div class="home__container container grid">
-          <div class="home__content">
-            <span class="home__small">Hello</span>
-            <h1 class="home__title">
-              <span>I'm </span> Nitish<br />
-              <span>
-                <div class="dynamic-txt-container">
-                  <h3>I'm<span class="auto-type"></span></h3>
-                </div>
-              </span>
-            </h1>
-            <p class="home__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header><%- include('../partials/header') %></header>
+        <main class="main">
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content">
+                        <span class="home__small">Hello</span>
+                        <h1 class="home__title">
+                            <span>I'm</span> Nitish
+                            <br>
+                            <span>
+                                <div class="dynamic-txt-container">
+                                    <h3>I'm
+                                        <span class="auto-type"></span>
+                                    </h3>
+                                </div>
+                            </span>
+                        </h1>
+                        <p class="home__description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
               praesentium exercitationem dolorum necessitatibus, libero eius
               aperiam quasi provident sapiente veritatis voluptatem expedita
               repellat itaque sit.
-            </p>
-            <div class="home__btns">
-              <a href="#contact" class="btn">Hire Me</a>
-              <a href="#portfolio" class="btn btn--transparent">Portfolio</a>
-            </div>
-          </div>
-          <div class="home__img-wrapper">
-            <img
-              src="/images/images/myphoto-removebg-preview.jpg"
-              alt="Nitish"
-              class="home__img"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="about section" id="about">
-        <div class="about__container container grid">
-          <div class="about__img-wrapper">
-            <img
-              src="/images/myphoto.jpeg"
-              class="about__img"
-              alt="Not-visible"
-            />
-            <img
-              src="/images/myphoto.jpeg"
-              class="about__img"
-              alt="Not-visible"
-            />
-            <img
-              src="/images/myphoto.jpeg"
-              class="about__img"
-              alt="Not-visible"
-            />
-            <img
-              src="/images/myphoto.jpeg"
-              class="about__img"
-              alt="Not-visible"
-            />
-          </div>
-          <div class="about__container">
-            <h3 class="section__title" data-title="Who am i?">
-              I'm Nitish rai , a visual Full stack developer
-            </h3>
-            <p class="about__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="home__btns">
+                            <a href="#contact" class="btn">Hire Me</a>
+                            <a href="#portfolio" class="btn btn--transparent">Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="home__img-wrapper">
+                        <img src="/images/images/myphoto-removebg-preview.jpg" alt="Nitish" class="home__img">
+                    </div>
+                </div>
+            </section>
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__img-wrapper">
+                        <img src="/images/myphoto.jpeg" class="about__img" alt="Not-visible">
+                        <img src="/images/myphoto.jpeg" class="about__img" alt="Not-visible">
+                        <img src="/images/myphoto.jpeg" class="about__img" alt="Not-visible">
+                        <img src="/images/myphoto.jpeg" class="about__img" alt="Not-visible">
+                    </div>
+                    <div class="about__container">
+                        <h3 class="section__title" data-title="Who am i?">
+                            I'm Nitish rai , a visual Full stack developer
+                        </h3>
+                        <p class="about__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloribus, laudantium assumenda, quaerat ducimus numquam sapiente,
               ut maxime veritatis enim earum delectus qui explicabo nam quis
               quam esse nisi temporibus fugiat.
-            </p>
-            <ul class="about__data grid">
-              <li class="data__item">
-                <h3 class="data__title">Name:</h3>
-                <span class="data__description">Nitish Rai</span>
-              </li>
-              <li class="data__item">
-                <h3 class="data__title">Age:</h3>
-                <span class="data__description">23 years</span>
-              </li>
-              <li class="data__item">
-                <h3 class="data__title">From:</h3>
-                <span class="data__description">Gorakhpur</span>
-              </li>
-              <li class="data__item">
-                <h3 class="data__title">Email:</h3>
-                <span class="data__description">nitishraigkp007@gmail.com</span>
-              </li>
-            </ul>
-            <div class="about__bottom">
-              <a href="" class="btn">Dounload Cv</a>
-              <div class="about__social-links">
-                <a href="" class="about__social-links">
-                  <i class="fa-brands fa-square-instagram"></i>
-                </a>
-                <a href="" class="about__social-links">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="" class="about__social-links">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="" class="about__social-links">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+                        </p>
+                        <ul class="about__data grid">
+                            <li class="data__item">
+                                <h3 class="data__title">Name:</h3>
+                                <span class="data__description">Nitish Rai</span>
+                            </li>
+                            <li class="data__item">
+                                <h3 class="data__title">Age:</h3>
+                                <span class="data__description">23 years</span>
+                            </li>
+                            <li class="data__item">
+                                <h3 class="data__title">From:</h3>
+                                <span class="data__description">Gorakhpur</span>
+                            </li>
+                            <li class="data__item">
+                                <h3 class="data__title">Email:</h3>
+                                <span class="data__description">nitishraigkp007@gmail.com</span>
+                            </li>
+                        </ul>
+                        <div class="about__bottom">
+                            <a href="" class="btn">Dounload Cv</a>
+                            <div class="about__social-links">
+                                <a href="" class="about__social-links">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                                <a href="" class="about__social-links">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="" class="about__social-links">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="" class="about__social-links">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====================Qualification====================== -->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title title_center" data-title="My Journey">
+                    Qualification
+                </h2>
+                <div class="resume__container container grid">
+                    <div class="resume__group">
+                        <h3 class="resume__heading">Education</h3>
+                        <div class="resume__items">
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">coderHouse</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__data-title">Backend Programing</h3>
+                                        <span class="resume__date">2014-2024</span>
+                                    </div>
+                                    <p class="resume__description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">coderHouse</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__data-title">Fronted Programing</h3>
+                                        <span class="resume__date">2014-2024</span>
+                                    </div>
+                                    <p class="resume__description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">coderHouse</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__data-title">DSA Programing</h3>
+                                        <span class="resume__date">2014-2024</span>
+                                    </div>
+                                    <p class="resume__description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume__group">
+                        <h3 class="resume__heading">Experiance</h3>
+                        <div class="resume__items">
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">coderHouse</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__data-title">Backend Programing</h3>
+                                        <span class="resume__date">2014-2024</span>
+                                    </div>
+                                    <p class="resume__description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">coderHouse</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__data-title">Fronted Programing</h3>
+                                        <span class="resume__date">2014-2024</span>
+                                    </div>
+                                    <p class="resume__description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">coderHouse</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__data-title">DSA Programing</h3>
+                                        <span class="resume__date">2014-2024</span>
+                                    </div>
+                                    <p class="resume__description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====================Service============================ -->
+            <section class="services section" id="services">
+                <h2 class="services__title title_center" data-title="Services">
+                    What i do for you
+                </h2>
+                <div class="services__container container grid">
+                    <div class="services__item">
+                        <i class="fa-solid fa-pen-to-square services__icon"></i>
+                        <h3 class="services__title">UI/UX Design</h3>
+                        <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
+                        <span class="services__no">01</span>
+                    </div>
+                    <div class="services__item">
+                        <i class="fa-solid fa-laptop services__icon"></i>
+                        <h3 class="services__title">WEB Development</h3>
+                        <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
+                        <span class="services__no">02</span>
+                    </div>
+                    <div class="services__item">
+                        <i class="fa-solid fa-chart-area services__icon"></i>
+                        <h3 class="services__title">Research & analysyis</h3>
+                        <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
+                        <span class="services__no">02</span>
+                    </div>
+                    <div class="services__item">
+                        <i class="fa-solid fa-pen-to-square services__icon"></i>
+                        <h3 class="services__title">UI/UX Design</h3>
+                        <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
+                        <span class="services__no">04</span>
+                    </div>
+                    <div class="services__item">
+                        <i class="fa-solid fa-laptop services__icon"></i>
+                        <h3 class="services__title">WEB Development</h3>
+                        <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
+                        <span class="services__no">05</span>
+                    </div>
+                    <div class="services__item">
+                        <i class="fa-solid fa-chart-area services__icon"></i>
+                        <h3 class="services__title">Research & analysyis</h3>
+                        <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
+                        <span class="services__no">06</span>
+                    </div>
+                </div>
+            </section>
+            <!-- =====================skills======================= -->
+            <section class="skills section">
+                <h2 class="services__title title_center" data-title="My Talent">
+                    Profsssional skills
+                </h2>
+                <div class="skills__container container grid">
+                    <div class="skills__item">
+                        <div class="skills__title">
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__no">85%</span>
+                        </div>
+                        <p class="skills_description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
+                        </p>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 89%;">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__title">
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__no">85%</span>
+                        </div>
+                        <p class="skills_description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
+                        </p>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 90%;">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__title">
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__no">85%</span>
+                        </div>
+                        <p class="skills_description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
+                        </p>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 89%;">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__title">
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__no">85%</span>
+                        </div>
+                        <p class="skills_description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
+                        </p>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 92%;">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__title">
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__no">85%</span>
+                        </div>
+                        <p class="skills_description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
+                        </p>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 85%;">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__title">
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__no">85%</span>
+                        </div>
+                        <p class="skills_description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
+                        </p>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 80%;">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="works section" id="works">
+                <h2 class="section__title title_center" data-title="My Talent">
+                    Recent works
+                </h2>
+                <div class="work__container container grid">
+                    <div class="work__card">
+                        <img src="/images/wrk2.jpg" alt="" class="work__img">
+                        <div class="work__details">
+                            <h3 class="work__title">
+                                web Design
+                            </h3>
+                            <span class="work__description">Work from home</span>
+                        </div>
+                    </div>
+                    <div class="work__card">
+                        <img src="/images/wrk3.jpg" alt="" class="work__img">
+                        <div class="work__details">
+                            <h3 class="work__title">
+                                web Design
+                            </h3>
+                            <span class="work__description">Work from home</span>
+                        </div>
+                    </div>
+                    <div class="work__card">
+                        <img src="/images/wrk2.jpg" alt="" class="work__img">
+                        <div class="work__details">
+                            <h3 class="work__title">
+                                web Design
+                            </h3>
+                            <span class="work__description">Work from home</span>
+                        </div>
+                    </div>
+                    <div class="work__card">
+                        <img src="/images/wrk4.jpg" alt="" class="work__img">
+                        <div class="work__details">
+                            <h3 class="work__title">
+                                web Design
+                            </h3>
+                            <span class="work__description">Work from home</span>
+                        </div>
+                    </div>
+                    <div class="work__card">
+                        <img src="/images/wrk5.jpg" alt="" class="work__img">
+                        <div class="work__details">
+                            <h3 class="work__title">
+                                web Design
+                            </h3>
+                            <span class="work__description">Work from home</span>
+                        </div>
+                    </div>
+                    <div class="work__card">
+                        <img src="/images/wrk3.jpg" alt="" class="work__img">
+                        <div class="work__details">
+                            <h3 class="work__title">
+                                web Design
+                            </h3>
+                            <span class="work__description">Work from home</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contect section" id="contect">
+                <h2 class="services__title title_center" data-title="Get in Touch">
+                    Contact Me
+                </h2>
+                <div class="contact__container container grid">
+                    <div class="contact__details">
+                        <div class="contact__item">
+                          <i class="fas fa-phone contact__item contact__icon"></i>
+                            <div>
+                              <h3 class="contact__title">Call us</h3>
+                              <span class="contact__data">+932309303</span>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                          
+                          <i class="fas fa-envelope contact__item contact__icon"></i>
+
+                          <div>
+                            <h3 class="contact__title">Email us</h3>
+                            <span class="contact__data">@ntiidhih</span>
+                          </div>
+                      </div>
+                      <div class="contact__item">
+                        <i class="fas fa-location-dot contact__item contact__icon"></i>
+
+                        <div>
+                          <h3 class="contact__title">Address</h3>
+                          <span class="contact__data">+932309303</span>
+                        </div>
+                    </div>
+                        
+                    
+                </div>
+                <form action="" class="contact__form">
+                  <div class="form__group">
+                    <div class="form__input">
+                      <input type="text" placeholder="name" class="input__control">
+                    </div>
+                    <div class="form__input">
+                      <input type="email" placeholder="Email" class="input__control">
+                    </div>
+                  </div>
+                  <div class="form__input">
+                    <input type="text" placeholder="Subject" class="input__control">
+                  </div> 
+                  <div class="form__input">
+                    <textarea name="" id="" placeholder="Message" cols="30" rows="10" class="input__control textarea"></textarea>
+                  </div>
+                  <button class="btn contact__btn">Send Message</button>
+                </form>
+                
+            
         </div>
-      </section>
-      <!-- ====================Qualification====================== -->
-      <section class="qualification section" id="qualification">
-        <h2 class="section__title title_center" data-title="My Journey">
-          Qualification
-        </h2>
-        <div class="resume__container container grid">
-          <div class="resume__group">
-            <h3 class="resume__heading">Education</h3>
-            <div class="resume__items">
-              <div class="resume__item">
-                <div class="resume__header">
-                  <h3 class="resume__subtitle">coderHouse</h3>
-                  <span class="resume__icon">+</span>
-                </div>
-                <div class="resume__content">
-                  <div class="resume__date-title">
-                    <h3 class="resume__data-title">Backend Programing</h3>
-                    <span class="resume__date">2014-2024</span>
-                  </div>
-                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
-                  </p>
-                </div>
-              </div>
-              <div class="resume__item">
-                <div class="resume__header">
-                  <h3 class="resume__subtitle">coderHouse</h3>
-                  <span class="resume__icon">+</span>
-                </div>
-                <div class="resume__content">
-                  <div class="resume__date-title">
-                    <h3 class="resume__data-title">Fronted Programing</h3>
-                    <span class="resume__date">2014-2024</span>
-                  </div>
-                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
-                  </p>
-                </div>
-              </div>
-              <div class="resume__item">
-                <div class="resume__header">
-                  <h3 class="resume__subtitle">coderHouse</h3>
-                  <span class="resume__icon">+</span>
-                </div>
-                <div class="resume__content">
-                  <div class="resume__date-title">
-                    <h3 class="resume__data-title">DSA Programing</h3>
-                    <span class="resume__date">2014-2024</span>
-                  </div>
-                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="resume__group">
-            <h3 class="resume__heading">Experiance</h3>
-            <div class="resume__items">
-              <div class="resume__item">
-                <div class="resume__header">
-                  <h3 class="resume__subtitle">coderHouse</h3>
-                  <span class="resume__icon">+</span>
-                </div>
-                <div class="resume__content">
-                  <div class="resume__date-title">
-                    <h3 class="resume__data-title">Backend Programing</h3>
-                    <span class="resume__date">2014-2024</span>
-                  </div>
-                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
-                  </p>
-                </div>
-              </div>
-              <div class="resume__item">
-                <div class="resume__header">
-                  <h3 class="resume__subtitle">coderHouse</h3>
-                  <span class="resume__icon">+</span>
-                </div>
-                <div class="resume__content">
-                  <div class="resume__date-title">
-                    <h3 class="resume__data-title">Fronted Programing</h3>
-                    <span class="resume__date">2014-2024</span>
-                  </div>
-                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
-                  </p>
-                </div>
-              </div>
-              <div class="resume__item">
-                <div class="resume__header">
-                  <h3 class="resume__subtitle">coderHouse</h3>
-                  <span class="resume__icon">+</span>
-                </div>
-                <div class="resume__content">
-                  <div class="resume__date-title">
-                    <h3 class="resume__data-title">DSA Programing</h3>
-                    <span class="resume__date">2014-2024</span>
-                  </div>
-                  <p class="resume__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum optio quod nesciunt autem aut, nisi porro maiores, ducimus odit minus quas fugiat totam, dignissimos nobis fugit. Dicta, odit doloremque!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ====================Service============================ -->
-      <section class="services section" id="services">
-        <h2 class="services__title title_center" data-title="Services">
-          What i do for you
-        </h2>
-        <div class="services__container container grid">
-          <div class="services__item">
-            <i class="fa-solid fa-pen-to-square services__icon"></i>
-            <h3 class="services__title">UI/UX Design</h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
-            <span class="services__no">01</span>
-          </div>
-          <div class="services__item">
-            <i class="fa-solid fa-laptop services__icon"></i>
-            <h3 class="services__title">WEB Development</h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
-            <span class="services__no">02</span>
-          </div>
-          <div class="services__item">
-            <i class="fa-solid fa-chart-area services__icon"></i>
-            <h3 class="services__title">Research & analysyis </h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
-            <span class="services__no">02</span>
-          </div>
-          <div class="services__item">
-            <i class="fa-solid fa-pen-to-square services__icon"></i>
-            <h3 class="services__title">UI/UX Design</h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
-            <span class="services__no">04</span>
-          </div>
-          <div class="services__item">
-            <i class="fa-solid fa-laptop services__icon"></i>
-            <h3 class="services__title">WEB Development</h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
-            <span class="services__no">05</span>
-          </div>
-          <div class="services__item">
-            <i class="fa-solid fa-chart-area services__icon"></i>
-            <h3 class="services__title">Research & analysyis </h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, minima?</p>
-            <span class="services__no">06</span>
-          </div>
-        </div>
-      </section>
-      <!-- =====================skills======================= -->
-       <section class="skills section">
-         <h2 class="services__title title_center" data-title="My Talent">
-          Profsssional skills
-        </h2>
-        <div class="skills__container container grid">
-          <div class="skills__item">
-            <div class="skills__title">
-              <h3 class="skills__name">React</h3>
-              <span class="skills__no">85%</span>
-            </div>
-            <p class="skills_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
-            </p>
-            <div class="skills__bar">
-              <div class="skills__percentage" style="width: 89%;">
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="skills__item">
-            <div class="skills__title">
-              <h3 class="skills__name">React</h3>
-              <span class="skills__no">85%</span>
-            </div>
-            <p class="skills_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
-            </p>
-            <div class="skills__bar">
-              <div class="skills__percentage" style="width: 90%;">
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="skills__item">
-            <div class="skills__title">
-              <h3 class="skills__name">React</h3>
-              <span class="skills__no">85%</span>
-            </div>
-            <p class="skills_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
-            </p>
-            <div class="skills__bar">
-              <div class="skills__percentage" style="width: 89%;">
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="skills__item">
-            <div class="skills__title">
-              <h3 class="skills__name">React</h3>
-              <span class="skills__no">85%</span>
-            </div>
-            <p class="skills_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
-            </p>
-            <div class="skills__bar">
-              <div class="skills__percentage" style="width: 92%;">
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="skills__item">
-            <div class="skills__title">
-              <h3 class="skills__name">React</h3>
-              <span class="skills__no">85%</span>
-            </div>
-            <p class="skills_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
-            </p>
-            <div class="skills__bar">
-              <div class="skills__percentage" style="width: 85%;">
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="skills__item">
-            <div class="skills__title">
-              <h3 class="skills__name">React</h3>
-              <span class="skills__no">85%</span>
-            </div>
-            <p class="skills_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sint voluptatibus praesentium aut? Iste, aliquid?
-            </p>
-            <div class="skills__bar">
-              <div class="skills__percentage" style="width: 80%;">
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-       </section>
-      <section class="works section" id="works">
-        <h2 class="section__title title_center" data-title="My Talent">
-           Recent works
-        </h2>
-        <div class="work__container container grid">
-          <div class="work__card">
-            <img src="/images/wrk2.jpg" alt="" class="work__img">
-            <div class="work__details">
-              <h3 class="work__title">
-                web Design
-              </h3>
-              <span class="work__description">Work from home</span>
-            </div>
-          </div>
-          <div class="work__card">
-            <img src="/images/wrk3.jpg" alt="" class="work__img">
-            <div class="work__details">
-              <h3 class="work__title">
-                web Design
-              </h3>
-              <span class="work__description">Work from home</span>
-            </div>
-          </div>
-          <div class="work__card">
-            <img src="/images/wrk2.jpg" alt="" class="work__img">
-            <div class="work__details">
-              <h3 class="work__title">
-                web Design
-              </h3>
-              <span class="work__description">Work from home</span>
-            </div>
-          </div>
-          <div class="work__card">
-            <img src="/images/wrk4.jpg" alt="" class="work__img">
-            <div class="work__details">
-              <h3 class="work__title">
-                web Design
-              </h3>
-              <span class="work__description">Work from home</span>
-            </div>
-          </div>
-          <div class="work__card">
-            <img src="/images/wrk5.jpg" alt="" class="work__img">
-            <div class="work__details">
-              <h3 class="work__title">
-                web Design
-              </h3>
-              <span class="work__description">Work from home</span>
-            </div>
-          </div>
-          <div class="work__card">
-            <img src="/images/wrk3.jpg" alt="" class="work__img">
-            <div class="work__details">
-              <h3 class="work__title">
-                web Design
-              </h3>
-              <span class="work__description">Work from home</span>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
+    </section>
+</main>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
       var typed = new Typed(".auto-type", {
         strings: [" Full Stack Developer", " Developer", " Gamemr"],
 
@@ -431,6 +472,6 @@
         backSpeed: 150,
         loop: true,
       });
-    </script>
-  </body>
+</script>
+</body>
 </html>

@@ -116,8 +116,9 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 3px 9px hsla(0,0,0,0.05);
+    box-shadow: 0 3px 9px hsla(0,0%,0%,0.05);
     /* height: 70px; */
+    z-index: 100;
 
 }
 
@@ -560,4 +561,25 @@ a{
 .work__card:hover .work__details{
     opacity: 1;
 
+}
+.work__card:hover :is(.work__title, .work__description){
+    transform: translateY(0);
+}
+.contact__container{
+    grid-template-columns: 5fr 7fr;
+    align-items: flex-start;
+
+}
+.contact__item{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.25rem;
+}
+.contact__item:not(:last-child){
+    margin-bottom: 2.5rem;
+}
+.contact__icon{
+    color: var(--first-color);
+    font-size: var(--large-font-size);
+    line-height: 1.8;
 }
