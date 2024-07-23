@@ -51,7 +51,7 @@ body{
 
 input,textarea,button,body{
     font-family: var(--body-font);
-    font-size: var(--larger-font-size);
+    font-size: var(--large-font-size);
 }
 
 body{
@@ -582,4 +582,54 @@ a{
     color: var(--first-color);
     font-size: var(--large-font-size);
     line-height: 1.8;
+}
+.contact__title{
+    font-size: var(--large-font-size);
+}
+.contact__data{
+    font-size: var(--large-font-size);
+}
+.form__group{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1.25rem;
+}
+
+.input__control{
+    font-size: var(--large-font-size);
+    color: var(--title-color);
+    background-color: var(--container-color);
+    padding: 0.9rem .75rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.textarea{
+    height: 140px;
+    resize: none;
+}
+.contact__btn{
+    float: right;
+}
+.footer{
+    background-color: var(--container-color);
+    padding-block: 3rem;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer__social-links{
+    display: flex;
+    column-gap: 1.25rem;
+
+
+}
+.footer__social-links{
+    color: var(--text-color);
+    font-size: var(--large-font-size);
 }
