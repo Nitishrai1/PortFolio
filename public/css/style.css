@@ -48,6 +48,11 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+
 
 input,textarea,button,body{
     font-family: var(--body-font);
@@ -107,8 +112,40 @@ a{
     letter-spacing: 1px;
     margin-bottom: .5rem;
 }
+/* style swticher */
+.style__switcher{
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    padding: 1rem;
+    width: 220px;
+    border: 1px solid var(--border-color);
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+.style__switcher-toggler
+.style__switcher-theme{
+    position: absolute;
+    right: 110%;
+    color: var(--title-color);
+    background-color: var(--body-color);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: grid;
+    place-items:center;
 
-
+}
+.style__switcher-color .color{
+    height: 30px;
+    width: 30px;
+    border-radius:50%;
+}
+.color-1{
+    background-color: hsl(252,35%,51%);
+}
 /* ===============header & navbar */
 .header{
     position: fixed;
