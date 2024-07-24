@@ -491,6 +491,22 @@
         backSpeed: 150,
         loop: true,
       });
+      document.getElementById('day-night').addEventListener('change', function() {
+    document.body.classList.toggle('night-mode', this.checked);
+});
+document.querySelectorAll('input[name="color"]').forEach((input) => {
+    input.addEventListener('change', function() {
+        document.body.classList.remove('color-scheme-1', 'color-scheme-2'); // Remove all color scheme classes
+        if (this.id === 'color-1') {
+            document.body.classList.add('color-scheme-1');
+        } else if (this.id === 'color-2') {
+            document.body.classList.add('color-scheme-2');
+        }
+        // Add other color schemes similarly
+    });
+});
+
+
 </script>
 </body>
 </html>

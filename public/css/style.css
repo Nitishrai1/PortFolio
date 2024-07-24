@@ -42,6 +42,14 @@ body{
 }
 
 /* =============Dark theme=============== */
+.night-mode {
+    --title-color: hsl(247, 27%, 31%);
+    --text-color: hsl(0, 0%, 41%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(266, 78%, 98%);
+    --border-color: hsl(0, 0%, 87%);
+}
+
 /* =============BASE====================== */
 *{
     margin: 0;
@@ -59,7 +67,7 @@ input,textarea,button,body{
     font-size: var(--large-font-size);
 }
 
-body{
+main{
     background-color: var(--body-color);
     color: var(--text-color);
 }
@@ -113,7 +121,12 @@ a{
     margin-bottom: .5rem;
 }
 /* style swticher */
-.style__switcher{
+input[type='radio'],
+input[type='checkbox']{
+    z-index: 1000;
+    position: relative;
+}
+.style__switcher {
     position: fixed;
     right: 0;
     bottom: 20%;
@@ -123,9 +136,16 @@ a{
     background-color: var(--container-color);
     border-radius: 0.5rem;
     z-index: 1000;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
 }
-.style__switcher-toggler
-.style__switcher-theme{
+
+#toggler:checked ~ .style__switcher {
+    transform: translateX(0);
+}
+
+.style__switcher-toggler,
+.style__switcher-theme {
     position: absolute;
     right: 110%;
     color: var(--title-color);
@@ -135,17 +155,104 @@ a{
     border-radius: 50%;
     cursor: pointer;
     display: grid;
-    place-items:center;
-
+    place-items: center;
+    transition: all 0.3s ease;
 }
-.style__switcher-color .color{
+
+.style__switcher-toggler {
+    top: 7%;
+}
+
+.style__switcher-theme {
+    bottom: 7%;
+}
+
+.style__switcher-theme .fa-moon {
+    display: none;
+}
+
+#day-night:checked ~ .style__switcher .fa-sun {
+    display: none;
+}
+
+#day-night:checked ~ .style__switcher .fa-moon {
+    display: block;
+}
+
+.style__switcher-title {
+    font-size: var(--large-font-size);
+    margin-bottom: 0.75rem;
+}
+
+.style__switcher-colors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+.style__switcher-colors .color {
     height: 30px;
     width: 30px;
-    border-radius:50%;
+    border-radius: 50%;
 }
-.color-1{
-    background-color: hsl(252,35%,51%);
+
+.color-1 {
+    background-color: hsl(252, 35%, 51%);
 }
+
+.color-2 {
+    background-color: hsl(351, 85%, 51%);
+}
+
+.color-3 {
+    background-color: hsl(271, 76%, 51%);
+}
+
+.color-4 {
+    background-color: hsl(255, 73%, 57%);
+}
+
+.color-5 {
+    background-color: hsl(43, 74%, 51%);
+}
+
+.color-6 {
+    background-color: hsl(22, 80%, 51%);
+}
+
+.color-7 {
+    background-color: hsl(100, 60%, 30%);
+}
+
+.color-8 {
+    background-color: hsl(314, 84%, 43%);
+}
+
+.color-9 {
+    background-color: hsl(55, 98%, 52%);
+}
+
+.color-10 {
+    background-color: hsl(196, 88%, 47%);
+}
+
+
+.color-scheme-1 {
+    --first-color: hsl(252, 35%, 51%);
+    --first-color-dark: hsl(252, 25%, 51%);
+    --first-color-light: hsl(252, 100%, 83%);
+}
+
+.color-scheme-2 {
+    --first-color: hsl(351, 85%, 51%);
+    --first-color-dark: hsl(351, 51%, 51%);
+    --first-color-light: hsl(351, 100%, 83%);
+}
+
+/* Define other color schemes similarly */
+
+
+
 
 
 /* ===============header & navbar */
@@ -660,6 +767,9 @@ a{
     justify-content: space-between;
     align-items: center;
 
+}
+.footer__copyright{
+    color: var(--text-color);
 }
 
 .footer__social-links{
