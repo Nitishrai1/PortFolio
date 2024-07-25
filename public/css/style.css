@@ -643,11 +643,11 @@ input[type='checkbox']{
 }
 .data__item{
     display: flex;
-    font-size: 28px;
+    font-size: var(--large-font-size);
     column-gap: .75rem;
 }
 .data__title{
-    font-size:var(--larger-font-size);
+    font-size:var(--large-font-size);
 }
 .about__link{
     color: hsl(255, 73%, 57%);
