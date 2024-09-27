@@ -9,6 +9,91 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+/* css for the navbar item */
+/* General Styles */
+.header {
+    width: 100%;
+    background-color: var(--container-color);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--title-color);
+  }
+  
+  .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .nav__link {
+    font-size: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+  
+  /* Hamburger icon */
+  .nav__hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .nav__list {
+      display: none; /* Hide the menu initially */
+      position: absolute;
+      top: 70px; /* Adjust according to your header height */
+      right: 0;
+      background-color: var(--container-color);
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+  
+    .nav__hamburger {
+      display: block; /* Show the hamburger icon on smaller screens */
+    }
+  
+    .nav__list.active {
+      display: flex; /* Display the menu when active */
+    }
+  }
+  
+  /* Additional Mobile Styles */
+  @media screen and (max-width: 480px) {
+    .nav_logo {
+      font-size: 1.2rem;
+    }
+  
+    .nav__link {
+      font-size: 0.9rem;
+    }
+  }
+  
+
 /* variables css */
 :root{
     --header-height:3.5rem;
@@ -791,51 +876,58 @@ input[type='checkbox']{
 }
 
 /* =======service section======= */
-.skills{
-    background-color:var(--container-color);
+.skills {
+    background-color: var(--container-color);
 }
-.skills__container{
-    grid-template-columns: repeat(3,1fr);
+
+/* Desktop layout */
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
     row-gap: 4rem;
 }
 
-.skills__title{
+.skills__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
 .skills__title,
-.skills_description{
+.skills_description {
     padding-inline: 1.5rem;
 }
 
-.skills_name{
+.skills_name {
     font-size: var(--larger-font-size);
 }
-.skills__no{
+
+.skills__no {
     color: var(--title-color);
     font-size: var(--large-font-size);
     font-weight: var(--weight-600);
 }
-.skills_description{
+
+.skills_description {
     margin-block: 1rem 1.8rem;
     font-size: 20px;
 }
-.skills__bar,
-.skills__percentage{
-    height: 2px;
-   
-}
-.skills__bar{
 
+.skills__bar,
+.skills__percentage {
+    height: 2px;
+}
+
+.skills__bar {
     background-color: var(--border-color);
 }
-.skills__percentage{
+
+.skills__percentage {
     background-color: var(--first-color);
     position: relative;
 }
-.skills__percentage span{
+
+.skills__percentage span {
     background-color: var(--container-color);
     border: 2px solid var(--border-color);
     width: 25px;
@@ -844,8 +936,70 @@ input[type='checkbox']{
     position: absolute;
     right: 0;
     top: -0.75rem;
-
 }
+
+/* Tablet screens (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        row-gap: 2rem;
+    }
+    
+    .skills_description {
+        font-size: 18px; /* Adjust font size for better readability */
+    }
+    
+    .skills__percentage span {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Mobile screens (768px and below) */
+@media screen and (max-width: 768px) {
+    .skills__container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .skills_name {
+        font-size: var(--large-font-size); /* Smaller font for mobile */
+    }
+    
+    .skills_description {
+        font-size: 16px;
+    }
+    
+    .skills__no {
+        font-size: var(--medium-font-size);
+    }
+    
+    .skills__percentage span {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Small mobile screens (480px and below) */
+@media screen and (max-width: 480px) {
+    .skills__title,
+    .skills_description {
+        padding-inline: 1rem; /* Less padding for small screens */
+    }
+    
+    .skills_description {
+        font-size: 14px;
+    }
+    
+    .skills_name {
+        font-size: var(--medium-font-size); /* Further reduce font size */
+    }
+    
+    .skills__percentage span {
+        width: 15px;
+        height: 15px;
+    }
+}
+
 /* ==============portfolio section============ */
 .work__container{
     grid-template-columns: repeat(3,1fr);
